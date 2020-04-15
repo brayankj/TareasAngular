@@ -1,0 +1,45 @@
+<div class="row animated fadeIn">
+    <div class="col-12 my-3 text-right">
+        <button (click)="openDialog()" class="btn newNote" matTooltip="New Note">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <div class="col-12 text-center" *ngIf="Lista.length==''">
+        <p class="h2 text-muted">No tienes notas</p>
+    </div>
+
+    <div class="col-sm-6 col-md-3" *ngFor="let lista of Lista">
+        <mat-card class="animated fadeIn">
+            <p matTooltip="View Note" [routerLink]="['/note',lista.id]" class="text-muted text-center">{{lista.titulo}}</p>
+
+            <button matTooltip="Acciónes" id="btnM" mat-icon-button [matMenuTriggerFor]="menu">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button (click)="editar(lista)" mat-menu-item>
+                    <i class="fas fa-edit text-primary"></i>
+                    <span> Editar</span>
+                  </button>
+                <button (click)="eliminar(lista)" mat-menu-item>
+                    <i class="fas fa-trash-alt text-danger"></i>
+                  <span> Eliminar</span>
+                </button>
+            </mat-menu>
+
+            <mat-card-footer align="end">
+                <ng-container *ngIf="lista.terminada==false; else elseTemplate">
+                    <span class="badge badge-info m-1">
+                        <small>Pendiente</small>
+                    </span>
+                </ng-container>
+                <ng-template #elseTemplate>
+                    <span class="badge badge-success m-1">
+                        <small>Terminada</small>
+                    </span>
+                </ng-template>
+            </mat-card-footer>
+        </mat-card>
+    </div>
+
+</div>

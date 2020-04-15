@@ -1,0 +1,24 @@
+h1 {
+    padding: 50px 0 0 10px;
+    font-size: 3.5rem;
+    color: #837a6d;
+    text-shadow: 1px 2px 2px gray;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #837a6d;
+    text-shadow: 1px 2px 2px gray;
+}
+
+button {
+    cursor: pointer;
+    margin: 10px 0;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #837a6d;
+}
+
+button:hover {
+    color: #fff;
+}

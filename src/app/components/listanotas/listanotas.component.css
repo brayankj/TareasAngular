@@ -1,0 +1,27 @@
+.newNote {
+    background-color: #9caf79;
+    border-radius: 50%;
+    color: #fff;
+}
+
+mat-card {
+    text-align: center;
+    background-color: #d9dcdf;
+    margin: 10px 0;
+}
+
+mat-card p {
+    cursor: pointer;
+}
+
+mat-card-header {
+    width: 100%;
+    text-align: center;
+}
+
+#btnM {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.dividir {
+    flex: 1 1 auto;
+}
+
+mat-toolbar {
+    background-color: #9caf79;
+}
+
+.user {
+    color: #fff;
+}
+
+button {
+    background-color: rgb(241, 68, 68);
+    color: #fff;
+}

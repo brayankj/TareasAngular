@@ -1,0 +1,79 @@
+h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 20px;
+    color: #837a6d;
+}
+
+img {
+    width: 80%;
+    max-height: 380px;
+}
+
+form {
+    text-align: center;
+    width: 100%;
+}
+
+mat-card {
+    width: 100%;
+    text-align: center;
+    background-color: #d9dcdf;
+}
+
+.h2 {
+    color: #837a6d;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+mat-form-field {
+    width: 80%;
+}
+
+.btnPrincipal {
+    margin-top: 0;
+    color: #fff;
+    background-color: #d5c187;
+}
+
+.btnGoogle {
+    margin: 5px;
+    background-color: #d34d29;
+    color: #fff;
+}
+
+.btnFacebook {
+    margin: 5px;
+    background-color: #3c5a9a;
+    color: #fff;
+}
+
+.btnTwitter {
+    margin: 5px;
+    background-color: #37ade5;
+    color: #fff;
+}
+
+.onda {
+    padding: 0;
+    margin: 0;
+}
+
+#ola {
+    position: fixed;
+    bottom: 0;
+}
+
+#login {
+    color: rgb(77, 74, 15);
+    cursor: pointer;
+}
+
+@media (min-width: 320px) {
+    .marg {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,19 @@
+<form [formGroup]="formu" class="animated fadeIn">
+    <mat-dialog-content>
+        <div>
+            <mat-form-field>
+                <input id="nnombre" formControlName="name" type="text" matInput placeholder="Name Note" />
+            </mat-form-field>
+            <p *ngIf="nombreValidator" class="alert alert-danger text-center">Name is required</p>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button (click)="guardar()" *ngIf="data.dialog=='nuevo'" mat-button>
+            Guardar
+        </button>
+        <button (click)="editar()" *ngIf="data.dialog=='editar'" mat-button>
+            editar
+        </button>
+        <button mat-raised-button color="warn" mat-button mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+</form>
